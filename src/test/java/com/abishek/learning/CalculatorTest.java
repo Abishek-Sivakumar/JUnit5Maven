@@ -22,7 +22,14 @@ class CalculatorTest {
     @Test
     void sumEqualsFive(){
         var calc= new Calculator();
-        assertEquals(6,calc.add(2,3));
+        assertEquals(6,calc.add(2,3),"Just Kidding the sum of 2 and 3 is 5");
     }
+
+   @Test
+    void checkArrays(){
+       int[] arr1 = {1,2,3,4};
+       int[] arr2 = {3,2,1,4};
+       assertArrayEquals(arr1,arr2);
+   }
 
 }
